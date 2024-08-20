@@ -1,11 +1,11 @@
-from task1 import Stack
+from task1 import StackLIFO
 
 
 def check_balanced_brackets(brackets: str) -> bool:
     dict_brackets = {']': '[',
                      ')': '(',
                      '}': '{'}
-    stack = Stack()
+    stack = StackLIFO()
     count = -1
     count_brackets = len(brackets)
     while (count := count + 1) < count_brackets:
