@@ -15,4 +15,4 @@ def check_balanced_brackets(brackets: str) -> bool:
                 return False
             continue
         stack.push(add_element)
-    return True  # Или return stack.is_empty()
+    return stack.is_empty()
